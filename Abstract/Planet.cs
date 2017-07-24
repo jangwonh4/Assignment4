@@ -8,10 +8,10 @@ namespace Abstract
 {
     public abstract class Planet
     {
-        private readonly double _diameter;
-        private readonly double _mass;
+        private double _diameter;
+        private double _mass;
         private int _moonCount;
-        private readonly string _name;
+        private string _name;
         private double _orbitalPeriod;
         private int _ringCount;
         private double _rotationPeriod;
