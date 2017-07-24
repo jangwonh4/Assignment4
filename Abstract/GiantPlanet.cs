@@ -12,11 +12,18 @@ namespace Abstract
         
         public GiantPlanet(string name, double diameter, double mass, string type) : base(name,diameter,mass)
         {
-            if (type == "Gas".ToLower())
-                Console.WriteLine("Type = Gas");
+            if (type == "Gas".ToLower() || type == "Ice".ToLower())
+            {
+                if (type == "Gas".ToLower())
+                {
+                    this._type = type;
+                    Console.WriteLine("Type = {0}", type);
+                }
+            }
             else
-                Console.WriteLine("Type = Ice");
-            this._type = type;
+            { Console.WriteLine("Invalid type"); }
+
+            
 
             
         }
